@@ -26,25 +26,25 @@ class Footer extends Component {
           <nav className="pull-left">
             <ul>
               <li>
-                <a href="#pablo">Home</a>
+                <a href="#ardash">Home</a>
               </li>
               <li>
-                <a href="#pablo">Company</a>
+                <a href="#ardash">Company</a>
               </li>
               <li>
-                <a href="#pablo">Portfolio</a>
+                <a href="#ardash">Portfolio</a>
               </li>
               <li>
-                <a href="#pablo">Blog</a>
+                <a href="#ardash">Blog</a>
               </li>
             </ul>
           </nav>
           <p className="copyright pull-right">
             &copy; {new Date().getFullYear()}{" "}
-            <a href="http://www.creative-tim.com?ref=lbr-footer">
-              Creative Tim
+            <a href="http://www.zeiten.com.mx">
+              Zeiten
             </a>
-            , made with love for a better web
+            , Desarrollo de Sistemas
           </p>
         </Grid>
       </footer>

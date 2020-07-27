@@ -25,7 +25,7 @@ class AdminNavbarLinks extends Component {
         <i className="fa fa-globe" />
         <b className="caret" />
         <span className="notification">5</span>
-        <p className="hidden-lg hidden-md">Notification</p>
+        <p className="hidden-lg hidden-md">Notificaciones</p>
       </div>
     );
     return (

@@ -100,12 +100,12 @@ class Icons extends Component {
                         <td>
                           <Button
                             target="_blank"
-                            href="http://www.creative-tim.com/product/light-bootstrap-dashboard-pro-react/?ref=lbdr-upgrade-page"
+                            href="www.zeiten.com.mx"
                             round
                             fill
                             bsStyle="info"
                           >
-                            Upgrade to PRO
+                            Ver sitio Web
                           </Button>
                         </td>
                       </tr>

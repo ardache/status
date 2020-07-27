@@ -493,35 +493,40 @@ const iconsArray = [
 //
 // Data for Pie Chart
 var dataPie = {
-  labels: ["40%", "20%", "40%"],
-  series: [40, 20, 40]
+  labels: ["79", "40"],
+  series: [79, 40]
 };
 var legendPie = {
-  names: ["Open", "Bounce", "Unsubscribe"],
+  names: ["Invertido", "Por Invertir"],
   types: ["info", "danger", "warning"]
 };
 
-// Data for Line Chart
+// Data for Line Chart  ==== Demo ReX  ====
 var dataSales = {
   labels: [
-    "9:00AM",
-    "12:00AM",
-    "3:00PM",
-    "6:00PM",
-    "9:00PM",
-    "12:00PM",
-    "3:00AM",
-    "6:00AM"
+    "14-Jul",
+    "17-Jul",
+    "20-Jul",
+    "22-Jul",
+    "24-Jul",
+    "27-Jul",
+    "29-Jul",
+    "31-Jul",
+    "3-Ago",
+    "5-Ago",
+    "7-Ago",
+    "10-Ago",
+    "12-Ago",
+    "14-Ago"
   ],
   series: [
-    [287, 385, 490, 492, 554, 586, 698, 695],
-    [67, 152, 143, 240, 287, 335, 435, 437],
-    [23, 113, 67, 108, 190, 239, 307, 308]
+    [1, 3, 4, 15, 23, 32, 44, 57, 61, 77, 85, 92, 96, 100],
+    [1, 3, 10, 38, 45]
   ]
 };
 var optionsSales = {
   low: 0,
-  high: 800,
+  high: 100,
   showArea: false,
   height: "245px",
   axisX: {
@@ -548,29 +553,38 @@ var responsiveSales = [
   ]
 ];
 var legendSales = {
-  names: ["Open", "Click", "Click Second Time"],
+  names: ["Planeado", "Real"],
+  types: ["info", "danger"]
+};
+
+// Data for Pie Chart
+var dataPieRetail = {
+  labels: ["65", "0"],
+  series: [65, 0]
+};
+var legendPieRetail = {
+  names: ["Invertido", "Por Invertir"],
   types: ["info", "danger", "warning"]
 };
 
-// Data for Bar Chart
+
+
+// Data for Bar Chart ==== App Retail ===
 var dataBar = {
   labels: [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "Mai",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec"
+    "20-Jul",
+    "22-Jul",
+    "24-Jul",
+    "27-Jul",
+    "29-Jul",
+    "31-Jul",
+    "3-Ago",
+    "5-Ago",
+    "7-Ago"
   ],
   series: [
-    [542, 443, 320, 780, 553, 453, 326, 434, 568, 610, 756, 895],
-    [412, 243, 280, 580, 453, 353, 300, 364, 368, 410, 636, 695]
+    [1,5,10,30,50,60,80,90,100],
+    [0,5,13]
   ]
 };
 var optionsBar = {
@@ -594,9 +608,120 @@ var responsiveBar = [
   ]
 ];
 var legendBar = {
-  names: ["Tesla Model S", "BMW 5 Series"],
+  names: ["Planeado", "Real"],
   types: ["info", "danger"]
 };
+
+
+// Data for Bar Chart ==== Sistema Retail ===
+var dataRTL = {
+  labels: [
+    "Abr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dic",
+    "Ene 21",
+    "Feb",
+    "Mar",
+    "Abr",
+    "May",
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dic"
+  ],
+  series: [
+    [1,5,12,15,20,25,30,35,40,44,48,53,56,60,66,72,80,86,93,97,100],
+    [0,5,13,14,16]
+  ]
+};
+var optionsRTL = {
+  seriesRTLDistance: 10,
+  axisX: {
+    showGrid: false
+  },
+  height: "245px"
+};
+var responsiveRTL = [
+  [
+    "screen and (max-width: 640px)",
+    {
+      seriesRTLDistance: 5,
+      axisX: {
+        labelInterpolationFnc: function(value) {
+          return value[0];
+        }
+      }
+    }
+  ]
+];
+var legendRTL = {
+  names: ["Planeado", "Real"],
+  types: ["info", "danger"]
+};
+
+
+// Data for Pie Chart  ===Web====
+var dataPieWeb = {
+  labels: ["4", "18"],
+  series: [4, 18]
+};
+var legendPieWeb = {
+  names: ["Invertido", "Por Invertir"],
+  types: ["info", "danger", "warning"]
+};
+
+// Data for Bar Chart ==== Sistema Retail ===
+var dataWeb = {
+  labels: [
+    "Jun",
+    "Jul",
+    "Ago",
+    "Sep",
+    "Oct",
+    "Nov"
+  ],
+  series: [
+    [1,10,30,50,70,100],
+    [1,5,]
+  ]
+};
+var optionsWeb = {
+  seriesRTLDistance: 10,
+  axisX: {
+    showGrid: false
+  },
+  height: "245px"
+};
+var responsiveWeb = [
+  [
+    "screen and (max-width: 640px)",
+    {
+      seriesWebDistance: 5,
+      axisX: {
+        labelInterpolationFnc: function(value) {
+          return value[0];
+        }
+      }
+    }
+  ]
+];
+var legendWeb = {
+  names: ["Planeado", "Real"],
+  types: ["info", "danger"]
+};
+
+
+
+
 
 module.exports = {
   style, // For notifications (App container and Notifications view)
@@ -605,6 +730,10 @@ module.exports = {
   iconsArray, // For icons (Icons view)
   dataPie,
   legendPie,
+  dataPieRetail,
+  legendPieRetail,
+  dataPieWeb,
+  legendPieWeb,
   dataSales,
   optionsSales,
   responsiveSales,
@@ -612,5 +741,17 @@ module.exports = {
   dataBar,
   optionsBar,
   responsiveBar,
-  legendBar // For charts (Dashboard view)
+  legendBar,
+  dataRTL,
+  optionsRTL,
+  responsiveRTL,
+  legendRTL,
+  dataWeb,
+  optionsWeb,
+  responsiveWeb,
+  legendWeb
+  
+  
+  
+  // For charts (Dashboard view)
 };

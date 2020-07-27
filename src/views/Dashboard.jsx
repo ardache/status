@@ -25,6 +25,10 @@ import { Tasks } from "components/Tasks/Tasks.jsx";
 import {
   dataPie,
   legendPie,
+  dataPieRetail,
+  legendPieRetail,
+  dataPieWeb,
+  legendPieWeb,
   dataSales,
   optionsSales,
   responsiveSales,
@@ -32,7 +36,16 @@ import {
   dataBar,
   optionsBar,
   responsiveBar,
-  legendBar
+  legendBar,
+  dataRTL,
+  optionsRTL,
+  responsiveRTL,
+  legendRTL,
+  dataWeb,
+  optionsWeb,
+  responsiveWeb,
+  legendWeb
+
 } from "variables/Variables.jsx";
 
 class Dashboard extends Component {
@@ -54,8 +67,8 @@ class Dashboard extends Component {
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-server text-warning" />}
-                statsText="Capacity"
-                statsValue="105GB"
+                statsText="Proyectos"
+                statsValue="4"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
@@ -63,8 +76,8 @@ class Dashboard extends Component {
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success" />}
-                statsText="Revenue"
-                statsValue="$1,345"
+                statsText="Eficiencia Gral."
+                statsValue="254%"
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Last day"
               />
@@ -72,8 +85,8 @@ class Dashboard extends Component {
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
-                statsText="Errors"
-                statsValue="23"
+                statsText="Desempeño"
+                statsValue="17%"
                 statsIcon={<i className="fa fa-clock-o" />}
                 statsIconText="In the last hour"
               />
@@ -82,7 +95,7 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="fa fa-twitter text-info" />}
                 statsText="Followers"
-                statsValue="+45"
+                statsValue="0"
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
@@ -93,9 +106,9 @@ class Dashboard extends Component {
               <Card
                 statsIcon="fa fa-history"
                 id="chartHours"
-                title="Users Behavior"
-                category="24 Hours performance"
-                stats="Updated 3 minutes ago"
+                title="Demo ReX - Reaseguro"
+                category="Desempeño de las ultimas 36 Horas"
+                stats="Actulizado hace 30 minutos"
                 content={
                   <div className="ct-chart">
                     <ChartistGraph
@@ -111,12 +124,12 @@ class Dashboard extends Component {
                 }
               />
             </Col>
-            <Col md={4}>
+             <Col md={4}>
               <Card
                 statsIcon="fa fa-clock-o"
-                title="Email Statistics"
-                category="Last Campaign Performance"
-                stats="Campaign sent 2 days ago"
+                title="Horas Invertidas"
+                category="Horas invertidas"
+                stats="Julio 2020"
                 content={
                   <div
                     id="chartPreferences"
@@ -129,34 +142,54 @@ class Dashboard extends Component {
                   <div className="legend">{this.createLegend(legendPie)}</div>
                 }
               />
-            </Col>
+            </Col> 
           </Row>
 
           <Row>
-            <Col md={6}>
+          <Col md={8}>
               <Card
-                id="chartActivity"
-                title="2014 Sales"
-                category="All products including Taxes"
-                stats="Data information certified"
+                id="chartRetail"
+                title="Sistema Retail"
+                category="Desempeño de las ultimas 36 Horas"
+                stats="Actualizado hace 30 minutos"
                 statsIcon="fa fa-check"
                 content={
                   <div className="ct-chart">
                     <ChartistGraph
-                      data={dataBar}
-                      type="Bar"
-                      options={optionsBar}
-                      responsiveOptions={responsiveBar}
+                      data={dataRTL}
+                      type="Line"
+                      options={optionsRTL}
+                      responsiveOptions={responsiveRTL}
                     />
                   </div>
                 }
                 legend={
-                  <div className="legend">{this.createLegend(legendBar)}</div>
+                  <div className="legend">{this.createLegend(legendRTL)}</div>
                 }
               />
             </Col>
 
-            <Col md={6}>
+            <Col md={4}>
+              <Card
+                statsIcon="fa fa-clock-o"
+                title="Horas Invertidas"
+                category="Horas invertidas"
+                stats="Julio 2020"
+                content={
+                  <div
+                    id="chartPreferences"
+                    className="ct-chart ct-perfect-fourth"
+                  >
+                    <ChartistGraph data={dataPieRetail} type="Pie" />
+                  </div>
+                }
+                legend={
+                  <div className="legend">{this.createLegend(legendPieRetail)}</div>
+                }
+              />
+            </Col> 
+
+            {/* <Col md={6}>
               <Card
                 title="Tasks"
                 category="Backend development"
@@ -170,8 +203,81 @@ class Dashboard extends Component {
                   </div>
                 }
               />
+            </Col> */}
+          </Row>
+          <Row>
+          <Col md={8}>
+              <Card
+                id="chartActivity"
+                title="App Retail"
+                category="Desempeño de las ultimas 36 Horas"
+                stats="Actualizado hace 30 minutos"
+                statsIcon="fa fa-check"
+                content={
+                  <div className="ct-chart">
+                    <ChartistGraph
+                      data={dataBar}
+                      type="Line"
+                      options={optionsBar}
+                      responsiveOptions={responsiveBar}
+                    />
+                  </div>
+                }
+                legend={
+                  <div className="legend">{this.createLegend(legendBar)}</div>
+                }
+              />
             </Col>
           </Row>
+
+          <Row>
+          <Col md={8}>
+              <Card
+                id="chartWebDev"
+                title="THB Online"
+                category="Desempeño de las ultimas 36 Horas"
+                stats="Actualizado hace 30 minutos"
+                statsIcon="fa fa-check"
+                content={
+                  <div className="ct-chart">
+                    <ChartistGraph
+                      data={dataWeb}
+                      type="Line"
+                      options={optionsWeb}
+                      responsiveOptions={responsiveWeb}
+                    />
+                  </div>
+                }
+                legend={
+                  <div className="legend">{this.createLegend(legendWeb)}</div>
+                }
+              />
+            </Col>
+
+            <Col md={4}>
+              <Card
+                statsIcon="fa fa-clock-o"
+                title="Horas Invertidas"
+                category="Horas invertidas"
+                stats="Julio 2020"
+                content={
+                  <div
+                    id="chartPreferences"
+                    className="ct-chart ct-perfect-fourth"
+                  >
+                    <ChartistGraph data={dataPieWeb} type="Pie" />
+                  </div>
+                }
+                legend={
+                  <div className="legend">{this.createLegend(legendPieWeb)}</div>
+                }
+              />
+            </Col> 
+
+
+          </Row>
+          
+
         </Grid>
       </div>
     );
