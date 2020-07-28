@@ -491,7 +491,7 @@ const iconsArray = [
 // // // // For dashboard's charts
 // //
 //
-// Data for Pie Chart
+// Data for Pie Chart  ==== Demo ReX - Reaseguro  =====
 var dataPie = {
   labels: ["79", "40"],
   series: [79, 40]
@@ -501,7 +501,7 @@ var legendPie = {
   types: ["info", "danger", "warning"]
 };
 
-// Data for Line Chart  ==== Demo ReX  ====
+// Data for Line Chart  ==== Demo ReX - Reaseguro  ====
 var dataSales = {
   labels: [
     "14-Jul",
@@ -521,7 +521,7 @@ var dataSales = {
   ],
   series: [
     [1, 3, 4, 15, 23, 32, 44, 57, 61, 77, 85, 92, 96, 100],
-    [1, 3, 10, 38, 45]
+    [1, 3, 10, 38, 45, 55]
   ]
 };
 var optionsSales = {
@@ -557,7 +557,7 @@ var legendSales = {
   types: ["info", "danger"]
 };
 
-// Data for Pie Chart
+// Data for Pie Chart   ===Retail===
 var dataPieRetail = {
   labels: ["65", "0"],
   series: [65, 0]
@@ -584,7 +584,7 @@ var dataBar = {
   ],
   series: [
     [1,5,10,30,50,60,80,90,100],
-    [0,5,13]
+    [0,5,13,27]
   ]
 };
 var optionsBar = {
@@ -639,8 +639,9 @@ var dataRTL = {
     "Dic"
   ],
   series: [
-    [1,5,12,15,20,25,30,35,40,44,48,53,56,60,66,72,80,86,93,97,100],
-    [0,5,13,14,16]
+    [0],
+    [0,5,13,14,16],
+    [1,5,12,15,20,25,30,35,40,44,48,53,56,60,66,72,80,86,93,97,100]
   ]
 };
 var optionsRTL = {
@@ -664,12 +665,12 @@ var responsiveRTL = [
   ]
 ];
 var legendRTL = {
-  names: ["Planeado", "Real"],
-  types: ["info", "danger"]
+  names: ["Estimado", "Real", "Planeado"],
+  types: ["warning", "danger", "info"]
 };
 
 
-// Data for Pie Chart  ===Web====
+// Data for Pie Chart  
 var dataPieWeb = {
   labels: ["4", "18"],
   series: [4, 18]
@@ -679,7 +680,7 @@ var legendPieWeb = {
   types: ["info", "danger", "warning"]
 };
 
-// Data for Bar Chart ==== Sistema Retail ===
+// Data for Bar Chart ==== Web ===
 var dataWeb = {
   labels: [
     "Jun",
@@ -690,8 +691,9 @@ var dataWeb = {
     "Nov"
   ],
   series: [
+    [0],
+    [1,5],
     [1,10,30,50,70,100],
-    [1,5,]
   ]
 };
 var optionsWeb = {
@@ -715,8 +717,8 @@ var responsiveWeb = [
   ]
 ];
 var legendWeb = {
-  names: ["Planeado", "Real"],
-  types: ["info", "danger"]
+  names: ["Planeado", "Real", "Estimado"],
+  types: ["warning", "danger", "info"]
 };
 
 
