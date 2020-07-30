@@ -493,12 +493,12 @@ const iconsArray = [
 //
 // Data for Pie Chart  ==== Demo ReX - Reaseguro  =====
 var dataPie = {
-  labels: ["87", "32"],
-  series: [87, 32]
+  labels: [ "", "103","16"],
+  series: [, 103,16]
 };
 var legendPie = {
-  names: ["Invertido", "Por Invertir"],
-  types: ["info", "danger", "warning"]
+  names: ["Invertido", "Por Invertir" ],
+  types: ["danger", "warning", "info"]
 };
 
 // Data for Line Chart  ==== Demo ReX - Reaseguro  ====
@@ -521,7 +521,7 @@ var dataSales = {
   ],
   series: [
     [1, 3, 4, 15, 23, 32, 44, 57, 61, 77, 85, 92, 96, 100],
-    [1, 3, 10, 38, 45, 55]
+    [1, 3, 10, 38, 45, 55, 75]
   ]
 };
 var optionsSales = {
@@ -559,12 +559,12 @@ var legendSales = {
 
 // Data for Pie Chart   ===Retail===
 var dataPieRetail = {
-  labels: ["65", "0"],
-  series: [65, 0]
+  labels: ["", "0", "65"],
+  series: [, 0, 65]
 };
 var legendPieRetail = {
   names: ["Invertido", "Por Invertir"],
-  types: ["info", "danger", "warning"]
+  types: ["warning", "info", "danger"]
 };
 
 
@@ -584,7 +584,7 @@ var dataBar = {
   ],
   series: [
     [1,5,10,30,50,60,80,90,100],
-    [0,5,13,27]
+    [0,5,13,27,53]
   ]
 };
 var optionsBar = {
@@ -672,12 +672,12 @@ var legendRTL = {
 
 // Data for Pie Chart  
 var dataPieWeb = {
-  labels: ["4", "18"],
-  series: [4, 18]
+  labels: ["", "18","4"],
+  series: [, 18,4]
 };
 var legendPieWeb = {
   names: ["Invertido", "Por Invertir"],
-  types: ["info", "danger", "warning"]
+  types: ["danger", "info", "warning"]
 };
 
 // Data for Bar Chart ==== Web ===

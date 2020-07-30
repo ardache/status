@@ -70,28 +70,37 @@ class Dashboard extends Component {
                 statsText="Proyectos"
                 statsValue="4"
                 statsIcon={<i className="fa fa-refresh" />}
-                statsIconText="Updated now"
-              />
-            </Col>
-            <Col lg={3} sm={6}>
-              <StatsCard
-                bigIcon={<i className="pe-7s-wallet text-success" />}
-                statsText="Eficiencia Gral."
-                statsValue="111%"
-                statsIcon={<i className="fa fa-calendar-o" />}
-                statsIconText="Last day"
+                statsIconText="Activos"
               />
             </Col>
             <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
                 statsText="Desempeño"
-                statsValue="1%"
+                statsValue="8%"
                 statsIcon={<i className="fa fa-clock-o" />}
-                statsIconText="In the last hour"
+                statsIconText="Ultimos 2 dias"
               />
             </Col>
             <Col lg={3} sm={6}>
+              <StatsCard
+                bigIcon={<i className="pe-7s-wallet text-success" />}
+                statsText="Eficiencia"
+                statsValue="166%"
+                statsIcon={<i className="fa fa-calendar-o" />}
+                statsIconText="Ultimos 2 dias"
+              />
+            </Col>
+            <Col lg={3} sm={6}>
+              <StatsCard
+                bigIcon={<i className="pe-7s-wallet text-success" />}
+                statsText="Eficiencia Promedio"
+                statsValue="240%"
+                statsIcon={<i className="fa fa-calendar-o" />}
+                statsIconText="Durante el proyecto"
+              />
+            </Col>
+            {/* <Col lg={3} sm={6}>
               <StatsCard
                 bigIcon={<i className="fa fa-twitter text-info" />}
                 statsText="Followers"
@@ -99,7 +108,7 @@ class Dashboard extends Component {
                 statsIcon={<i className="fa fa-refresh" />}
                 statsIconText="Updated now"
               />
-            </Col>
+            </Col> */}
           </Row>
           <Row>
             <Col md={8}>
