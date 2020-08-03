@@ -77,7 +77,7 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="pe-7s-graph1 text-danger" />}
                 statsText="Desempeño"
-                statsValue="8%"
+                statsValue="2%"
                 statsIcon={<i className="fa fa-clock-o" />}
                 statsIconText="Ultimos 2 dias"
               />
@@ -86,7 +86,7 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success" />}
                 statsText="Eficiencia"
-                statsValue="166%"
+                statsValue="115%"
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Ultimos 2 dias"
               />
@@ -95,7 +95,7 @@ class Dashboard extends Component {
               <StatsCard
                 bigIcon={<i className="pe-7s-wallet text-success" />}
                 statsText="Eficiencia Promedio"
-                statsValue="240%"
+                statsValue="219%"
                 statsIcon={<i className="fa fa-calendar-o" />}
                 statsIconText="Durante el proyecto"
               />
