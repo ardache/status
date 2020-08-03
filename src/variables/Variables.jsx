@@ -493,8 +493,8 @@ const iconsArray = [
 //
 // Data for Pie Chart  ==== Demo ReX - Reaseguro  =====
 var dataPie = {
-  labels: [ "", "103","16"],
-  series: [, 103,16]
+  labels: [ "", "119","0"],
+  series: [, 119, 0]
 };
 var legendPie = {
   names: ["Invertido", "Por Invertir" ],
@@ -521,7 +521,7 @@ var dataSales = {
   ],
   series: [
     [1, 3, 4, 15, 23, 32, 44, 57, 61, 77, 85, 92, 96, 100],
-    [1, 3, 10, 38, 45, 55, 75]
+    [1, 3, 10, 38, 45, 55, 75, 90]
   ]
 };
 var optionsSales = {
@@ -584,7 +584,7 @@ var dataBar = {
   ],
   series: [
     [1,5,10,30,50,60,80,90,100],
-    [0,5,13,27,53]
+    [0,5,13,27,53,75]
   ]
 };
 var optionsBar = {
