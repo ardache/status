@@ -584,7 +584,7 @@ var dataBar = {
   ],
   series: [
     [1,5,10,30,50,60,80,90,100],
-    [0,5,13,27,53,75]
+    [0,5,13,27,53,60]
   ]
 };
 var optionsBar = {
@@ -672,8 +672,8 @@ var legendRTL = {
 
 // Data for Pie Chart  
 var dataPieWeb = {
-  labels: ["", "18","4"],
-  series: [, 18,4]
+  labels: ["", "22","0"],
+  series: [, 22,0]
 };
 var legendPieWeb = {
   names: ["Invertido", "Por Invertir"],
@@ -692,7 +692,7 @@ var dataWeb = {
   ],
   series: [
     [0],
-    [1,7],
+    [1,11],
     [1,10,30,50,70,100],
   ]
 };
